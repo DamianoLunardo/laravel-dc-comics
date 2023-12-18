@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreComicRequest;
 use App\Http\Requests\UpdateComicRequest;
 use App\Models\Comic;
+use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
@@ -22,15 +23,30 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreComicRequest $request)
+    public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        
+        $comic = new Comic();
+        $comic->name = $data ['title'];
+        $comic->name = $data ['description'];
+        $comic->name = $data ['thumb'];
+        $comic->name = $data ['price'];
+        $comic->name = $data ['series'];
+        $comic->name = $data ['sale_date'];
+        $comic->name = $data ['type'];
+        
+
+    $comic->save();
+    
+    return redirect()->route('comics.show', $comic);
+
     }
 
     /**

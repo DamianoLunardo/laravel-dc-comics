@@ -13,7 +13,9 @@
                 <th>Series</th>
                 <th>Sale Date</th>
                 <th>Type</th>
-                <th></th>
+                <th>
+                   <a href="{{ route('comics.create') }}" class="btn btn-primary">Add comic</a>
+                </th>
             </tr>
         </thead>
         <tbody>
