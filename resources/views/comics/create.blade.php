@@ -18,8 +18,8 @@
                 placeholder="description">
               </div>
               <div class="mb-3">
-                <label for="image" class="form-label">Image(url)</label>
-                <input type="text" class="form-control" name="image" id="image" 
+                <label for="thumb" class="form-label">Image(url)</label>
+                <input type="text" class="form-control" name="thumb" id="thumb" 
                 placeholder="url image">
               </div>
               <div class="mb-3">
