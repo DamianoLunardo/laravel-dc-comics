@@ -34,17 +34,16 @@
                 placeholder="series" value="{{ $comic->series }}">
               </div>
               <div class="mb-3">
-                <label for="sale_date" class="form-label">sale_date</label>
-                <input type="text" class="form-control" name="sale_date" id="sale_date" 
-                placeholder="sale_date" value="{{ $comic->sale_date }}">
-              </div>
-              <div class="mb-3">
                 <label for="type" class="form-label">type</label>
-                <input type="text" class="form-control" name="type" id="type" 
-                placeholder= "type" value="{{ $comic->type }}>
+                <input type="text" class="form-control" name="sale_date" id="type" 
+                placeholder="type" value="{{ $comic->type }}">
               </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+             
+              <a href="{{ route('comics.index') }}" class="btn btn-primary">Submit</a>
+              
+              
+             
 
 
         </form>
