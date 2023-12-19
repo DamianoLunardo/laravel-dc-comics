@@ -4,7 +4,7 @@
 
 <section>
     <div class="container">
-        <h1>{{ $comic->title }}</h1>
+        <h1>{{ $comic->title }} <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary">Edit</a></h1>
         <p>{{ $comic->description }}</p>
         <img src="{{ $comic->thumb }}"  width="64" alt="{{ $comic->title }}">
         <p>{{ $comic->price }}</p>
